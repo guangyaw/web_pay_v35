@@ -25,7 +25,9 @@ SECRET_KEY = 'rrmrkd5cv-butjmj8698r0zz4&(co+n3@+5-npol=43!u7qwzj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'payment.twshop.asia',
+]
 
 
 # Application definition
