@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="author" content="Bitify Chen ">
+	<meta name="keywords" content="關鍵字1,關鍵字2">
+	<meta name="description" content="描述句">
+	<link rel="apple-touch-icon" href="/favicon.png">
+	<title>標題</title>
+    {% load static %}
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{%static 'css/style.css' %}">
+</head>
+
+		
+
+<body>
+	<section class="main">
+		<div id="menu"><div class="left-zone"><img src="{% static 'images/banner.png' %}" alt="banner"class="img-fluid"></div></div>
+		<div class="right-zone">
+			<form action="">
+				<div class="form-title">
+					<h4>即將完成，</br>請確認您的資料!</h4>
+				</div>
+				<div class="form-title">
+					<h4>1.捐款資料</h4>
+				</div>
+				<div class="form-box">
+					<label for="">捐款項目</label>
+					<input value="資工系50週年活動" readonly="readonly">
+				</div>
+				<div class="form-box">
+					<label for="">捐款金額(新台幣)</label>
+					<input value="10000" readonly="readonly">
+				</div>
+				<div class="form-box">
+					<label for="">捐款方式</label>
+					<input value="匯款" readonly="readonly">
+				</div>
+				<div class="form-title">
+					<h4>2.基本資料</h4>
+				</div>
+				<div class="form-box">
+					<label for="">姓名/公司名稱</label>
+					<input value="逢甲大學資工系系友" readonly="readonly">
+				</div>
+				<div class="form-box">
+					<label for="">身份證字號/統一編號</label>
+					<input value="S124444444" readonly="readonly">
+				</div>
+				<div class="form-box">
+					<label for="">電子信箱</label>
+					<input value="iecs@mail.fcu.edu.tw" readonly="readonly">
+				</div>
+				<div class="form-box">
+					<label for="">連絡電話</label>
+					<input value="0987000000" readonly="readonly">
+				</div>
+				<div class="form-title">
+					<h4>3.收據資訊</h4>
+				</div>
+				<div class="form-box">
+					<label for="">收據抬頭</label>
+					<input value="逢甲大學資工系系友" readonly="readonly">
+				</div>
+				<div class="form-box">
+					<label for="">收據身份證字號/統一編號</label>
+					<input value="S124444444" readonly="readonly">
+				</div>
+				<div class="form-box">
+					<label for="">收據寄送方式</label>
+					<input value="掛號郵寄" readonly="readonly">
+				</div>
+				<div class="form-box">
+					<label for="">收據寄送地址</label>
+					<input value="台中市西屯區文華路100號" readonly="readonly">
+				</div>
+				
+				
+			
+<!-- 			<div class="form-button">
+					<button id="submit" type="submit">下一步</button>>
+				</div> -->	
+			</form>
+				<div class="form-button">
+					<a onclick="history.back()"><button>返回修改</button></a>
+					<a href="../step3"><button>完成</button></a>
+				</div>
+
+		</div>
+	</section>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+	<script src="twzipcode.min.js"></script>
+	<script>
+		$("#zipcode3").twzipcode({
+		"zipcodeIntoDistrict": true,
+		"css": ["city form-control", "town form-control"],
+		"countyName": "city", // 指定城市 select name
+		"districtName": "town" // 指定地區 select name
+		});
+</script>
+	
+</body>
+</html>
