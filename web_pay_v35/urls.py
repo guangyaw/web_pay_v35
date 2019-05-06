@@ -16,9 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from pay_info.views import testutl
+from pay_info.views import testutl,step1url,step2url,step3url,step4url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', testutl),
+    path('step1/', step1url),
+    path('step2/', step2url),
+    path('step3/', step3url),
+    path('step4/', step4url),
 ]
